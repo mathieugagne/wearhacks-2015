@@ -58,35 +58,38 @@
           </aside>
         </section>
 
-        <section>
+        <!-- <section>
           <img src="img/what-to-talk-about.jpg" alt="" />
 
           <aside class="notes">
             And it dawned on me that every software has this central idea at its core.
           </aside>
-        </section>
+        </section> -->
 
         <section>
           <h2>Communication</h2>
 
           <aside class="notes">
             Software is all about sending messages.
+            And what's fun is getting into a ..
           </aside>
         </section>
 
-        <section>
-          <h2>Introspection</h2>
+        <!-- <section>
+          <h2>Monologue</h2>
           <h3>Your inner dialect</h3>
 
           <aside class="notes">
             In your code you have command and query messages.
             Some methods/functions that return something and change nothing. Some that
             change something and return nothing. And of course some that do both.
+            But all this communication happens within your program.
+            It's a monologue really. A project talking to itself.
             Communication is one thing. But when you want to have a long lasting call,
             something more than a chit chat on Plenty of Fish, you need to initiate a
             conversation.
           </aside>
-        </section>
+        </section> -->
 
         <section>
           <h2>Conversation</h2>
@@ -117,6 +120,10 @@
         </section>
 
         <section>
+          Flash
+        </section>
+
+        <section>
           <h3>Ajax Long Polling</h3>
           <img src="img/are-we-there-yet.jpg" alt="" />
           <aside class="notes">
@@ -129,6 +136,15 @@
         </section>
 
         <section>
+          <aside class="notes">
+            However, all of these work-arounds share one problem: They carry the overhead of HTTP,
+            which doesn’t make them well suited for low latency applications.
+            The WebSocket specification introduces an API for persistent connection between the client and the server
+            where both parties can start sending data at any time.
+          </aside>
+        </section>
+
+        <section>
           <h2>WebSockets</h2>
           <img src="img/websocket.png" alt="" />
 
@@ -137,6 +153,79 @@
             with everyone else's information. You also want the players to send
             their movements along. Chat applications are also a typical usage.
           </aside>
+        </section>
+
+        <section>
+
+WebSocket libraries for supported runtimes:
+
+(NodeJS) socket.io
+(NodeJS) ws
+(NodeJS) WebSocket-Node
+(Ruby) em-websocket
+(Python) Websocket-For-Python
+(Python) Twisted
+(Python) autobahn
+(Python) pywebsocket
+(Python) Tornado
+
+          Node.js
+
+Socket.IO
+WebSocket-Node
+ws
+Java
+
+Grizzly
+Apache Tomcat 7
+Jetty
+Atmosphere
+Ruby
+
+EventMachine
+Faye WebSocket
+Python
+
+pywebsocket
+Tornado
+PHP
+
+Rachet
+Php Websocket
+
+C++: libwebsockets
+Errlang: Shirasu.ws
+Java: Jetty
+Node.JS: ws
+Ruby: em-websocket
+Python: Tornado, pywebsocket
+PHP: Ratchet, phpws
+        </section>
+
+        <section>
+          Pusher
+          Socket.io
+        </section>
+
+        <section>
+          <pre><code class='js javascript' data-trim>var ws = new WebSocket("ws://example.com/")</code></pre>
+          <pre class='fragment'><code class='js javascript' data-trim>ws.onopen = function(event) {
+  console.log('WebSocket opened.');
+}
+
+ws.onclose = function(event) {
+  console.log('WebSocket closed.');
+  reconnect();
+}</code></pre>
+          <pre class='fragment'><code class='js javascript' data-trim>ws.onerror = function(event) {
+  var notification = new Notification(event);
+  reconnect();
+}</code></pre>
+          <pre class='fragment'><code class='js javascript' data-trim>ws.onmessage = function(event) {
+  console.log(event.data);
+}
+</code></pre>
+          <pre class='fragment'><code class='js javascript' data-trim>ws.send("Whatever you want.");</code></pre>
         </section>
 
         <section>
@@ -160,6 +249,10 @@
           <blockquote>
             To understand what recursion is, you must first understand recursion.
           </blockquote>
+        </section>
+
+        <section>
+          <pre><code data-trim>while(!asleep()) sheep++</code></pre>
         </section>
 
 			</div>
