@@ -49,15 +49,6 @@
           </aside>
         </section>
 
-        <section data-background="img/zombie-door-opener.jpg">
-
-          <aside class="notes">
-            This is the zombie finger door opener. Guys of Many by Many made this
-            to buzz open the door downstairs.
-            So considering I had little experience in the field. I thought..
-          </aside>
-        </section>
-
         <!-- <section>
           <img src="img/what-to-talk-about.jpg" alt="" />
 
@@ -116,11 +107,9 @@
         <section>
           <h3>Ajax Polling</h3>
           <img src="img/are-we-there-yet.jpg" alt="" />
+          <aside class="notes">
 
-        </section>
-
-        <section>
-          Flash
+          </aside>
         </section>
 
         <section>
@@ -132,10 +121,7 @@
         </section>
 
         <section>
-          Server-Sent Events
-        </section>
-
-        <section>
+          <h2>But I want Real-Time!</h2>
           <aside class="notes">
             However, all of these work-arounds share one problem: They carry the overhead of HTTP,
             which doesn’t make them well suited for low latency applications.
@@ -145,66 +131,55 @@
         </section>
 
         <section>
-          <h2>WebSockets</h2>
-          <img src="img/websocket.png" alt="" />
+          <h2>Pub/Sub Pattern</h2>
+          <img src="img/redis.png" alt="" />
+          <ul>
+            <li>Publishers</li>
+            <li>Subscribers</li>
+            <li>Channels</li>
+          </ul>
+        </section>
 
+        <section>
+          Server-Sent Events
+        </section>
+
+        <section>
+          <h2>Bidirectional Realtime</h2>
           <aside class="notes">
-            WebSockets are often used in games. You want to update all browsers
-            with everyone else's information. You also want the players to send
-            their movements along. Chat applications are also a typical usage.
+            Although SSE and pub/sub are pretty close to what we want, they are
+            still missing low latency bidirectionality.
           </aside>
         </section>
 
         <section>
+          <h2>WebSockets</h2>
+          <img src="img/websocket.png" alt="" />
+          <ul>
+            <li>Cross Origin Communication</li>
+            <li>Realtime</li>
+            <li>Bidirectional</li>
+          </ul>
 
-WebSocket libraries for supported runtimes:
-
-(NodeJS) socket.io
-(NodeJS) ws
-(NodeJS) WebSocket-Node
-(Ruby) em-websocket
-(Python) Websocket-For-Python
-(Python) Twisted
-(Python) autobahn
-(Python) pywebsocket
-(Python) Tornado
-
-          Node.js
-
-Socket.IO
-WebSocket-Node
-ws
-Java
-
-Grizzly
-Apache Tomcat 7
-Jetty
-Atmosphere
-Ruby
-
-EventMachine
-Faye WebSocket
-Python
-
-pywebsocket
-Tornado
-PHP
-
-Rachet
-Php Websocket
-
-C++: libwebsockets
-Errlang: Shirasu.ws
-Java: Jetty
-Node.JS: ws
-Ruby: em-websocket
-Python: Tornado, pywebsocket
-PHP: Ratchet, phpws
+          <aside class="notes">
+            WebSockets are often used for chat applications, whiteboard collaboration, live tickers and games.
+            Whenever you want to update all browsers
+            with everyone else's information. You also want the players to send
+            their movements along.
+          </aside>
         </section>
 
         <section>
-          Pusher
-          Socket.io
+          <h2>WebSocket libraries for supported runtimes</h2>
+          <ul>
+            <li>(NodeJS) socket.io, ws, WebSocket-Node</li>
+            <li>(Ruby) EventMachine, Faye Websocket</li>
+            <li>(Python) Websocket-For-Python, Twisted, Autobahn, pywebsocket, Tornado</li>
+            <li>(Java) Grizzly, Atmosphere, Jetty</li>
+            <li>(PHP) Rachet, phpwebsocket</li>
+            <li>(C++) libwebsockets</li>
+            <li>(Errlang) Shirasu.ws</li>
+          </ul>
         </section>
 
         <section>
@@ -229,12 +204,34 @@ ws.onclose = function(event) {
         </section>
 
         <section>
-          Hipster Battle!
+          <h2>Third-Party to your help</h2>
+          <ul>
+            <li>Pusher</li>
+            <li>Socket.io</li>
+            <li>PubNub</li>
+            <li>SocketCluster (Node.js)</li>
+            <li>SockJS</li>
+            <li>Firebase</li>
+            <li>etc.</li>
+          </ul>
+
+          <aside class="notes">
+            Great documentation, usually featured a free sandbox account, easy demo 'chat app'.
+          </aside>
         </section>
 
         <section>
-          <h2>Effective Collaboration</h2>
-          <h4>Redis & WebSocket</h4>
+          <h2>Live dangerously!</h2>
+          <h2>Phone War Live Demo</h2>
+        </section>
+
+        <section data-background="img/zombie-door-opener.jpg">
+
+          <aside class="notes">
+            This is the zombie finger door opener. Guys of Many by Many made this
+            to buzz open the door downstairs.
+            So considering I had little experience in the field. I thought..
+          </aside>
         </section>
 
         <section>
