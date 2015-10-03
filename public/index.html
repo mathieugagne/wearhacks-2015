@@ -18,6 +18,12 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+		<style media="screen">
+			.reveal section img {
+				background-color: #FFF;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -30,7 +36,7 @@
 					<h1>WearHacks 2015</h1>
 					<h3>How do you communicate?</h3>
 					<p>
-						<small>Created by Mathieu Gagn&eacute;</small>
+						<small>by Mathieu Gagn&eacute;</small>
 					</p>
 				</section>
 
@@ -49,75 +55,31 @@
           </aside>
         </section>
 
-        <!-- <section>
-          <img src="img/what-to-talk-about.jpg" alt="" />
-
-          <aside class="notes">
-            And it dawned on me that every software has this central idea at its core.
-          </aside>
-        </section> -->
-
-        <section>
-          <h2>Communication</h2>
-
-          <aside class="notes">
-            Software is all about sending messages.
-            And what's fun is getting into a ..
-          </aside>
-        </section>
-
-        <!-- <section>
-          <h2>Monologue</h2>
-          <h3>Your inner dialect</h3>
-
-          <aside class="notes">
-            In your code you have command and query messages.
-            Some methods/functions that return something and change nothing. Some that
-            change something and return nothing. And of course some that do both.
-            But all this communication happens within your program.
-            It's a monologue really. A project talking to itself.
-            Communication is one thing. But when you want to have a long lasting call,
-            something more than a chit chat on Plenty of Fish, you need to initiate a
-            conversation.
-          </aside>
-        </section> -->
-
-        <section>
-          <h2>Conversation</h2>
-
-          <aside class="notes">
-            There are quite a few ways to converse.
-            Some systems decide to broadcast.
-            Others constantly poke you.
-          </aside>
-        </section>
-
-        <section>
-          <h2>Conversation</h2>
-          <h3 class='fragment'></h3>
-
-          <aside class="notes">
-            There are quite a few ways to converse.
-            Monologues, Dialogues, Polylogues or Multilgues.
-
-            Others constantly poke you.
-          </aside>
-        </section>
-
         <section>
           <h3>Ajax Polling</h3>
-          <img src="img/are-we-there-yet.jpg" alt="" />
-          <aside class="notes">
+          <img src="/img/ajax.png" alt="" />
 
-          </aside>
         </section>
+
+				<section>
+					<h3>Ajax Polling</h3>
+          <img src="/img/are-we-there-yet.jpg" alt="" />
+				</section>
 
         <section>
           <h3>Ajax Long Polling</h3>
-          <img src="img/are-we-there-yet.jpg" alt="" />
-          <aside class="notes">
-            Pretty much the same, except you should image Bart shut up after the first time.
-          </aside>
+          <img src="/img/ajax-long-polling.png" alt="" />
+        </section>
+
+				<section>
+					<h3>Server-Sent Events</h3>
+          <img src="/img/server-sent-events.png" alt="" />
+				</section>
+
+        <section>
+					<h4>Flash</h4>
+					<h4>Forever iframe</h4>
+					<h4>And other streaming connections</h4>
         </section>
 
         <section>
@@ -131,20 +93,6 @@
         </section>
 
         <section>
-          <h2>Pub/Sub Pattern</h2>
-          <img src="img/redis.png" alt="" />
-          <ul>
-            <li>Publishers</li>
-            <li>Subscribers</li>
-            <li>Channels</li>
-          </ul>
-        </section>
-
-        <section>
-          Server-Sent Events
-        </section>
-
-        <section>
           <h2>Bidirectional Realtime</h2>
           <aside class="notes">
             Although SSE and pub/sub are pretty close to what we want, they are
@@ -153,13 +101,7 @@
         </section>
 
         <section>
-          <h2>WebSockets</h2>
-          <img src="img/websocket.png" alt="" />
-          <ul>
-            <li>Cross Origin Communication</li>
-            <li>Realtime</li>
-            <li>Bidirectional</li>
-          </ul>
+	        <img src="/img/icon-websocket.png" alt="" />
 
           <aside class="notes">
             WebSockets are often used for chat applications, whiteboard collaboration, live tickers and games.
@@ -168,6 +110,19 @@
             their movements along.
           </aside>
         </section>
+
+				<section>
+					<h2>WebSockets</h2>
+          <ul>
+            <li>Cross Origin Communication</li>
+            <li>Realtime</li>
+            <li>Bidirectional</li>
+          </ul>
+				</section>
+
+				<section>
+          <img src="/img/websocket.png" alt="" />
+				</section>
 
         <section>
           <h2>WebSocket libraries for supported runtimes</h2>
@@ -203,6 +158,10 @@ ws.onclose = function(event) {
           <pre class='fragment'><code class='js javascript' data-trim>ws.send("Whatever you want.");</code></pre>
         </section>
 
+				<section>
+					<img src="/img/neo-knows.jpg" alt="" />
+				</section>
+
         <section>
           <h2>Third-Party to your help</h2>
           <ul>
@@ -222,35 +181,22 @@ ws.onclose = function(event) {
 
         <section>
           <h2>Live dangerously!</h2>
-          <h2>Phone War Live Demo</h2>
+          <h2>Manufacturer War - Live Demo</h2>
+					<h4><a href='http://bit.ly/wearhacks-websockets' target="_blank">http://bit.ly/wearhacks-websockets</a></h4>
         </section>
 
-        <section data-background="img/zombie-door-opener.jpg">
-
-          <aside class="notes">
-            This is the zombie finger door opener. Guys of Many by Many made this
-            to buzz open the door downstairs.
-            So considering I had little experience in the field. I thought..
-          </aside>
-        </section>
+				<section>
+					<h2>This example is online</h2>
+					<a href='https://github.com/mathieugagne/manufacturer-battle' target="_blank">https://github.com/mathieugagne/manufacturer-battle</a>
+				</section>
 
         <section>
-          <h2>Have Fun!</h2>
-
-          <aside class="notes">
-            I can't wait to see your projects tomorrow.
-          </aside>
+          <pre><code data-trim>while(!asleep()) hack++</code></pre>
         </section>
 
-        <section>
-          <blockquote>
-            To understand what recursion is, you must first understand recursion.
-          </blockquote>
-        </section>
-
-        <section>
-          <pre><code data-trim>while(!asleep()) sheep++</code></pre>
-        </section>
+				<section>
+					<h2><a href='http://bit.ly/wearhacks-warmonger' target="_blank">http://bit.ly/wearhacks-warmonger</a></h2>
+				</section>
 
 			</div>
 
